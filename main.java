@@ -1,6 +1,6 @@
 //! esercizio 1
 
-//Memorizzare in un array di dieci posizioni dieci numeri naturali
+//?Memorizzare in un array di dieci posizioni dieci numeri naturali
 
 // import java.util.Scanner;
 
@@ -14,7 +14,7 @@
 
 //! esercizio 2
 
-//Dato un array di interi già valorizzato, stampare il contenuto
+//??Dato un array di interi già valorizzato, stampare il contenuto
 
 // import java.util.Scanner;
 
@@ -32,7 +32,7 @@
 
 //! esercizio 3
 
-//Dato un array di interi già valorizzato, stampare tutti gli elementi maggiori di 10
+//?Dato un array di interi già valorizzato, stampare tutti gli elementi maggiori di 10
 
 // import java.util.Scanner;
 
@@ -53,20 +53,40 @@
 
 //!esercizio 4
 
-//Dato un array di interi già valorizzato, stampare la somma di tutti gli elementi
+//?Dato un array di interi già valorizzato, stampare la somma di tutti gli elementi
 
-import java.util.Scanner;
+//import java.util.Scanner;
+
+// public class main {
+
+//     public static void main(String[] args) {
+//         int[] array = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+//         int sum = 0;
+//         for (int i = 0; i < array.length; i++) {
+//             sum += array[i];
+
+//         }
+//         System.out.println(sum);
+
+//     }
+// }
+
+//! esercizio 5
+
+//?Dato un array di interi già valorizzata, stampare la media
 
 public class main {
 
     public static void main(String[] args) {
         int[] array = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
         int sum = 0;
+        
         for (int i = 0; i < array.length; i++) {
             sum += array[i];
 
         }
-        System.out.println(sum);
+        float media = (float) sum/array.length;
+        System.out.println(media);
 
     }
 }

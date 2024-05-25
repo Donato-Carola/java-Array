@@ -75,18 +75,40 @@
 
 //?Dato un array di interi già valorizzata, stampare la media
 
+// public class main {
+
+//     public static void main(String[] args) {
+//         int[] array = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+//         int sum = 0;
+        
+//         for (int i = 0; i < array.length; i++) {
+//             sum += array[i];
+
+//         }
+//         float media = (float) sum/array.length;
+//         System.out.println(media);
+
+//     }
+// }
+
+//!esercizio 6 
+
+//Dato un array di interi già valorizzato, contare quante volte è presente il numero 10 
+
 public class main {
 
     public static void main(String[] args) {
-        int[] array = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-        int sum = 0;
-        
+        int[] array = { 10, 10, 50, 45, 75, 10, 52, 10, 10, 10, 10, 10 };
+        int count = 0;
+
         for (int i = 0; i < array.length; i++) {
-            sum += array[i];
+          if(array[i] == 10){
+            count += 1;
+          }
 
         }
-        float media = (float) sum/array.length;
-        System.out.println(media);
+        System.out.println("di numeri 10 ce nesono: " + count);
+      
 
     }
 }

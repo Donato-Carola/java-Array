@@ -95,20 +95,43 @@
 
 //Dato un array di interi già valorizzato, contare quante volte è presente il numero 10 
 
+// public class main {
+
+//     public static void main(String[] args) {
+//         int[] array = { 10, 10, 50, 45, 75, 10, 52, 10, 10, 10, 10, 10 };
+//         int count = 0;
+
+//         for (int i = 0; i < array.length; i++) {
+//           if(array[i] == 10){
+//             count += 1;
+//           }
+
+//         }
+//         System.out.println("di numeri 10 ce nesono: " + count);
+      
+
+//     }
+// }
+
+
+//! 7
+
+//Memorizzare in un array di 100 posti i primi cento numeri interi in ordine inverso
+
 public class main {
 
     public static void main(String[] args) {
-        int[] array = { 10, 10, 50, 45, 75, 10, 52, 10, 10, 10, 10, 10 };
-        int count = 0;
-
-        for (int i = 0; i < array.length; i++) {
-          if(array[i] == 10){
-            count += 1;
-          }
+        int[] array = new int [100];
+         
+        for (int i = 0; i < 100; i++) {
+         array[i] = 100 - i;
 
         }
-        System.out.println("di numeri 10 ce nesono: " + count);
-      
+
+        for(int i = 0; i<100;i++){
+            System.out.print(array[i] + " ");
+        }
+       
 
     }
 }
